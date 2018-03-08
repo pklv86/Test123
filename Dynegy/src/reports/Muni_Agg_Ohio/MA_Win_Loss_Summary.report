@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_53678605</developerName>
+        <masterLabel>Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <value>Win</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Loss</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Renewal Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Indicative Pricing Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quote Requested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiating Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed NA</sourceValue>
+            </sourceValues>
+            <value>Closed-Other</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_13955700</developerName>
+        <masterLabel>State</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Service_Territory__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AEPOHIO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DAYTON</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DEOHIO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FEOHIO</sourceValue>
+            </sourceValues>
+            <value>Ohio</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ameren-IL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ComEd-IL</sourceValue>
+            </sourceValues>
+            <value>Illinois</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EVERE - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>WMECO - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAN - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FGE - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MAELEC - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BECO - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>COMM - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CAMB - MA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEC</sourceValue>
+            </sourceValues>
+            <value>Massachusetts</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UGI - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pike County - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Penn Power - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PPL - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Penelec - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PECO - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MetEd - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Duquesne - PA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FEWP</sourceValue>
+            </sourceValues>
+            <value>Pennsylvania</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_8075800</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <value>Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Lost</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed NA</sourceValue>
+            </sourceValues>
+            <value>Closed (Other)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Renewal Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Indicative Pricing Sent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quote Requested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiating Contract</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Retail_Quote__c.Total_Quote_MWh__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Muni-Agg</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_8075800</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_13955700</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MA Win-Loss Summary</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCustomEntity$Retail_Quote__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

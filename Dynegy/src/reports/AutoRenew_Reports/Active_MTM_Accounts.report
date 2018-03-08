@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.LDC_Accounts__r$Id</field>
+    </columns>
+    <columns>
+        <field>Account.LDC_Accounts__r$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Account.LDC_Accounts__r$FRM_Profile__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PersonAccount.Mass_Market_Individual_Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Business_Account__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>MTM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.LDC_Accounts__r$LDC_Account_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ACTIVE</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Active MTM Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Customer_w_LDCAccount_w_ContractLDC_w_Extras__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

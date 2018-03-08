@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LDC_Account__c$Name</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Id</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Vendor__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Account_Status__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Bill_Cycle__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Contract__c</field>
+    </columns>
+    <description>account detail to find accounts to enroll</description>
+    <format>Tabular</format>
+    <name>Accounts to Enroll</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LDC_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LDC_Account__c$Opt_Out_Period_Ends__c</dateColumn>
+        <endDate>2017-05-05</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-05-05</startDate>
+    </timeFrameFilter>
+</Report>

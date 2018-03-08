@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Contracts__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Contracts__r$Contract_Counter_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Contracts__r$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Contracts__r$StartDate</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Contracts__r$EndDate</field>
+    </columns>
+    <description>Signed prior to [last day of month] with future start date</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities.Contracts__r$Account</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>MA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Muni_Agg</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.Contracts__r$Contract_Counter_Signed_Date__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>1/31/2018 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.Contracts__r$StartDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/1/2018</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$Service_Territory__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ameren-IL,ComEd-IL</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Step 2_Glenda Metrics</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Customers_w_Opportunities_w_Contracts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

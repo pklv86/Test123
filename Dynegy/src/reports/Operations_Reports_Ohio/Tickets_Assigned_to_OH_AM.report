@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Tickets__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Tickets__c.Bug__c</field>
+    </columns>
+    <columns>
+        <field>Tickets__c.Description__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Tickets__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Resolved,Cancelled,Duplicate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Tickets__c.Assigned_Developer__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Bill Fleissner,Janice Haller,Jennifer Roberts,Judy Diver,Missy Sturgeon,Vanessa Stadelmann</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Tickets__c.Assigned_Developer__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tickets Assigned to OH AM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Tickets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

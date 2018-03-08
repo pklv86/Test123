@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LDC_Account__c$Name</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$LDC_Account_Status__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Service_County__c</field>
+    </columns>
+    <columns>
+        <field>LDC_Account__c$Id</field>
+    </columns>
+    <description>This report is created for extracting the counties for PA Service territories</description>
+    <filter>
+        <criteriaItems>
+            <column>LDC_Account__c$Service_Territory__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FEWP,WPENN-PA,Duquesne - PA,MetEd - PA,PECO - PA,Penelec - PA,PPL - PA,Penn Power - PA,Pike County - PA,UGI - PA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LDC_Account__c$Service_County__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LDC_Account__c$LDC_Account_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ACTIVE,FINAL</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LDC PA County</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LDC_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LDC_Account__c$Alert_Expires__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
